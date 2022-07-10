@@ -1,6 +1,7 @@
 package semonster2;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Player {
 
@@ -26,7 +27,6 @@ public class Player {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("Deck:" + this.name + "\n");
-    sb.append("Deck's HP:" + this.hp + "\n");
     for (Monster m : this.monsterDeck) {
       sb.append(m.name + ":レア度[" + m.rare + "]" + "\n");
     }
